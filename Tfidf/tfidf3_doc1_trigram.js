@@ -1,4 +1,4 @@
-d3.json("/Tfidf/tfidf_step3_doc1_trigram.json", function(data) {
+d3.json("Tfidf/tfidf_step3_doc1_trigram.json", function(data) {
 	
 	var width = 1600,
 		height = 1200,
