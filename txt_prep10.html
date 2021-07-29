@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/CSS/menu.css" >
+	<link rel="stylesheet" type="text/css" href="/CSS/txt_prep.css" >
+	<link rel="stylesheet" type="text/css" href="/CSS/tree.css"/>
+	<link rel="stylesheet" type="text/css" href="/CSS/fill.css"/>
+	<link rel="icon" type="image/x-icon" href="/Image/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>VisNLP</title>
+</head>
+
+
+<body>
+
+
+<!–– ###############################  Menu  ############################### ––>
+<div>
+    <ul class="mainMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="txt_prep1.html">Text Preprocessor</a></li>
+		<li><a href="vocab1_txtprep.html">Token Manager</a></li>
+		<li><a>Text Vectorizer &#160 <i class="fa fa-caret-down"></i></a>
+         <ul class="subMenu">
+             <li><a>One-Hot Encoder &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="stat_onehot0_1gram.html">Unigram</a></li>
+					 <li><a href="stat_onehot0_2gram.html">Bigram</a></li>
+					 <li><a href="stat_onehot0_3gram.html">Trigram</a></li>
+                 </ul>
+			 </li>
+             <li><a>TF-IDF Encoder &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="stat_tfidf0_1gram.html">Unigram</a></li>
+					 <li><a href="stat_tfidf0_2gram.html">Bigram</a></li>
+					 <li><a href="stat_tfidf0_3gram.html">Trigram</a></li>
+                 </ul>
+			 </li>
+             <li><a>Word Probability Encoder &#160 <i class="fa fa-caret-right"></i></a>
+                 <ul class="SuperSubMenu">
+                     <li><a href="stat_entropy0_1gram.html">Unigram</a></li>
+					 <li><a href="stat_entropy0_2gram.html">Bigram</a></li>
+					 <li><a href="stat_entropy0_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+         </ul>
+        </li>
+        <li><a>Text Similarity Dashboard &#160 <i class="fa fa-caret-down"></i></a>
+         <ul class="subMenu">
+			 <li><a>N-Gram Heatmap Table &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="table_heatmap_1gram.html">Unigram</a></li>
+					 <li><a href="table_heatmap_2gram.html">Bigram</a></li>
+					 <li><a href="table_heatmap_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+			 <li><a>Vectorizer Heatmap Table &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="table_vector_ohe.html">One-Hot Encoder</a></li>
+					 <li><a href="table_vector_tfidf.html">TF-IDF Encoder</a></li>
+					 <li><a href="table_vector_entropy.html">Word Probability Encoder</a></li>
+                 </ul>
+             </li>
+             <li><a>Cosine Similarity &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="table_cosine_1gram.html">Unigram</a></li>
+					 <li><a href="table_cosine_2gram.html">Bigram</a></li>
+					 <li><a href="table_cosine_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+             <li><a>Euclidean Distance &#160 <i class="fa fa-caret-right"></i></a>
+                 <ul class="SuperSubMenu">
+                     <li><a href="table_euclid_1gram.html">Unigram</a></li>
+					 <li><a href="table_euclid_2gram.html">Bigram</a></li>
+					 <li><a href="table_euclid_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+         </ul>
+        </li>
+		<li><a href="#">Survey</a></li>
+    </ul>
+</div>
+
+<!–– ###############################  Menu2  ############################### ––>
+<div>
+    <ul class="txtMenu">
+        <li><a href="txt_prep1.html">Corpus</a></li>
+		<li><a href="txt_prep2.html">Document Separator</a></li>
+		<li><a href="txt_prep3.html">Sentence Splitter</a></li>
+		<li><a href="txt_prep4.html">Spelling Corrector</a></li>
+		<li><a href="txt_prep5.html">Contraction Expander</a></li>
+		<li><a href="txt_prep6.html">Number Converter</a></li>
+		<li><a href="txt_prep7.html">Punctuation Remover</a></li>
+		<li><a href="txt_prep8.html">Non-alphanumeric Remover</a></li>
+		<li><a href="txt_prep9.html">Stopword Remover</a></li>
+		<li><a class="active" href="txt_prep10.html">Word Lemmatizer</a></li>
+		<li><a href="txt_prep11.html">Lowercase Converter</a></li>
+    </ul>
+</div>
+
+
+<!–– ###############################  Content  ############################### ––>
+
+<div style="float:left; height:100%; width:20%; margin: 0;">
+<div class="fill">
+<img src="/Image/chart_textprep_10.png" alt="">
+</div>
+</div>
+
+<div style="float:right; height:100%; width:80%; margin: 0;">
+<br></br>
+<div class="infobox">
+	<h2><center><strong class="type">Text Preprocessor</strong></center></h2>
+	<h4 style="margin-left:100px; margin-right:100px;"><center><text class="detail"></text></center></h4>
+	<p><center><text class="before"></text></center></p>
+	<p><center><text class="after"></text></center></p>
+</div>
+
+<!–– ###############################  Script  ############################### ––>
+
+<div id="txt_step10">
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="/Text_Prep/nlp_tree_step10.js" type="text/javascript"></script>
+<script>
+var treeData = txt_step10
+</script>
+<script src="/Text_Prep/txt_prep_step10.js"> </script>
+</div>
+</div>
+
+<!–– ############################################################################################## ––>
+
+
+
+
+</body>
+</html>

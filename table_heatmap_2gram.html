@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/CSS/menu.css" >
+	<link rel="stylesheet" type="text/css" href="/CSS/mouseover.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/tfidf_legend.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/heatmap.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/tips.css" />
+	<link rel="icon" type="image/x-icon" href="/Image/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>VisNLP Home</title>
+</head>
+
+
+<body>
+
+<!–– ###############################  Menu  ############################### ––>
+<div>
+    <ul class="mainMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="txt_prep1.html">Text Preprocessor</a></li>
+		<li><a href="vocab1_txtprep.html">Token Manager</a></li>
+		<li><a>Text Vectorizer &#160 <i class="fa fa-caret-down"></i></a>
+         <ul class="subMenu">
+             <li><a>One-Hot Encoder &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="stat_onehot0_1gram.html">Unigram</a></li>
+					 <li><a href="stat_onehot0_2gram.html">Bigram</a></li>
+					 <li><a href="stat_onehot0_3gram.html">Trigram</a></li>
+                 </ul>
+			 </li>
+             <li><a>TF-IDF Encoder &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="stat_tfidf0_1gram.html">Unigram</a></li>
+					 <li><a href="stat_tfidf0_2gram.html">Bigram</a></li>
+					 <li><a href="stat_tfidf0_3gram.html">Trigram</a></li>
+                 </ul>
+			 </li>
+             <li><a>Word Probability Encoder &#160 <i class="fa fa-caret-right"></i></a>
+                 <ul class="SuperSubMenu">
+                     <li><a href="stat_entropy0_1gram.html">Unigram</a></li>
+					 <li><a href="stat_entropy0_2gram.html">Bigram</a></li>
+					 <li><a href="stat_entropy0_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+         </ul>
+        </li>
+        <li><a class="active">Text Similarity Dashboard &#160 <i class="fa fa-caret-down"></i></a>
+         <ul class="subMenu">
+			 <li><a>N-Gram Heatmap Table &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="table_heatmap_1gram.html">Unigram</a></li>
+					 <li><a href="table_heatmap_2gram.html">Bigram</a></li>
+					 <li><a href="table_heatmap_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+			 <li><a>Vectorizer Heatmap Table &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="table_vector_ohe.html">One-Hot Encoder</a></li>
+					 <li><a href="table_vector_tfidf.html">TF-IDF Encoder</a></li>
+					 <li><a href="table_vector_entropy.html">Word Probability Encoder</a></li>
+                 </ul>
+             </li>
+             <li><a>Cosine Similarity &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="table_cosine_1gram.html">Unigram</a></li>
+					 <li><a href="table_cosine_2gram.html">Bigram</a></li>
+					 <li><a href="table_cosine_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+             <li><a>Euclidean Distance &#160 <i class="fa fa-caret-right"></i></a>
+                 <ul class="SuperSubMenu">
+                     <li><a href="table_euclid_1gram.html">Unigram</a></li>
+					 <li><a href="table_euclid_2gram.html">Bigram</a></li>
+					 <li><a href="table_euclid_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+         </ul>
+        </li>
+		<li><a href="#">Survey</a></li>
+    </ul>
+</div>
+
+<!–– ###############################  Content  ############################### ––>
+
+<br></br></br></br>
+<div class="infobox">
+	<h1><center><strong> Bigram Heatmap Table </strong></center></h1>	
+</div>
+
+<div class="ohe_heatmap2" style="float:left; height:100%; width:33.3%; margin: 0;">
+<div class="infobox">
+	<h2><center><strong> One-Hot Vectors </strong></center></h2>
+</div>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="/Table/table_ohe_bigram.js"> </script>
+</div>
+
+<div class="tfidf_heatmap2" style="float:left; height:100%; width:33.3%; margin: 0;">
+<div class="infobox">
+	<h2><center><strong> TF-IDF Vectors </strong></center></h2>
+</div>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="/Table/table_tfidf_bigram.js"> </script>
+</div>
+
+<div class="entropy_heatmap2" style="float:left; height:100%; width:33.3%; margin: 0;">
+<div class="infobox">
+	<h2><center><strong> Word Probability Vectors </strong></center></h2>
+</div>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="/Table/table_entropy_bigram.js"> </script>
+</div>
+
+<div id="legend1" style="width:70%; margin-left:15%;"><center>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="/Tfidf/tfidf_legend.js"> </script>
+<p><center> *** For the TF-IDF vectors, the TF-IDF values are shown on the left and the normalized color values are shown on the right when the cursor moves over the cells. *** </p></center>
+</div>
+
+</body>
+</html>
