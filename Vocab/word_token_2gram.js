@@ -1,4 +1,4 @@
-d3.json("/Vocab/token_2gram_uncollapse.json", function(data) {
+d3.json("Vocab/token_2gram_uncollapse.json", function(data) {
 	
 	var width = 800,
 		height = 4200;

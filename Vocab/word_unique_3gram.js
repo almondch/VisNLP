@@ -1,4 +1,4 @@
-d3.json("/Vocab/unique_3gram.json", function(data) {
+d3.json("Vocab/unique_3gram.json", function(data) {
 	
 	var width = 1600,
 		height = 1200,
