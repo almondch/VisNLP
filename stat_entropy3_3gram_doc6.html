@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/CSS/menu.css" >
+	<link rel="stylesheet" type="text/css" href="/CSS/entropy.css" >
+	<link rel="stylesheet" type="text/css" href="/CSS/tree_stat_3.css"/>
+	<link rel="stylesheet" type="text/css" href="/CSS/fill.css"/>
+	<link rel="stylesheet" type="text/css" href="/CSS/mouseover.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/tips.css"/>
+	<link rel="stylesheet" type="text/css" href="/CSS/tfidf_legend.css" />
+	<link rel="icon" type="image/x-icon" href="/Image/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>VisNLP</title>
+</head>
+
+
+<body>
+
+
+<!–– ###############################  Menu  ############################### ––>
+<div>
+    <ul class="mainMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="txt_prep1.html">Text Preprocessor</a></li>
+		<li><a href="vocab1_txtprep.html">Token Manager</a></li>
+		<li><a class="active">Word Probability Encoder &#160 <i class="fa fa-caret-down"></i></a>
+         <ul class="subMenu">
+             <li><a>One-Hot Encoder &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="stat_onehot0_1gram.html">Unigram</a></li>
+					 <li><a href="stat_onehot0_2gram.html">Bigram</a></li>
+					 <li><a href="stat_onehot0_3gram.html">Trigram</a></li>
+                 </ul>
+			 </li>
+             <li><a>TF-IDF Encoder &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="stat_tfidf0_1gram.html">Unigram</a></li>
+					 <li><a href="stat_tfidf0_2gram.html">Bigram</a></li>
+					 <li><a href="stat_tfidf0_3gram.html">Trigram</a></li>
+                 </ul>
+			 </li>
+             <li><a>Word Probability Encoder &#160 <i class="fa fa-caret-right"></i></a>
+                 <ul class="SuperSubMenu">
+                     <li><a href="stat_entropy0_1gram.html">Unigram</a></li>
+					 <li><a href="stat_entropy0_2gram.html">Bigram</a></li>
+					 <li><a href="stat_entropy0_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+         </ul>
+        </li>
+        <li><a>Text Similarity Dashboard &#160 <i class="fa fa-caret-down"></i></a>
+         <ul class="subMenu">
+			 <li><a>N-Gram Heatmap Table &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="table_heatmap_1gram.html">Unigram</a></li>
+					 <li><a href="table_heatmap_2gram.html">Bigram</a></li>
+					 <li><a href="table_heatmap_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+			 <li><a>Vectorizer Heatmap Table &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="table_vector_ohe.html">One-Hot Encoder</a></li>
+					 <li><a href="table_vector_tfidf.html">TF-IDF Encoder</a></li>
+					 <li><a href="table_vector_entropy.html">Word Probability Encoder</a></li>
+                 </ul>
+             </li>
+             <li><a>Cosine Similarity &#160 <i class="fa fa-caret-right"></i></a>
+				 <ul class="SuperSubMenu">
+                     <li><a href="table_cosine_1gram.html">Unigram</a></li>
+					 <li><a href="table_cosine_2gram.html">Bigram</a></li>
+					 <li><a href="table_cosine_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+             <li><a>Euclidean Distance &#160 <i class="fa fa-caret-right"></i></a>
+                 <ul class="SuperSubMenu">
+                     <li><a href="table_euclid_1gram.html">Unigram</a></li>
+					 <li><a href="table_euclid_2gram.html">Bigram</a></li>
+					 <li><a href="table_euclid_3gram.html">Trigram</a></li>
+                 </ul>
+             </li>
+         </ul>
+        </li>
+		<li><a href="#">Survey</a></li>
+    </ul>
+</div>
+
+<!–– ###############################  Menu2  ############################### ––>
+<div>
+    <ul class="entropyMenu">
+		<li><a href="stat_entropy0_3gram.html">Input from Unique Word Generator (Trigram)</a></li>
+		<li><a href="stat_entropy1_3gram.html">Input from Text Preprocessor (Trigram)</a></li>
+		<li><a href="#">Term Frequency Generator (Trigram) &#160 <i class="fa fa-caret-down"></i></a>
+		<ul class="subentropyMenu">
+			 <li><a href="stat_entropy2_3gram_doc1.html">Job 1</a></li>
+			 <li><a href="stat_entropy2_3gram_doc2.html">Job 2</a></li>
+			 <li><a href="stat_entropy2_3gram_doc3.html">Job 3</a></li>
+			 <li><a href="stat_entropy2_3gram_doc4.html">Job 4</a></li>
+			 <li><a href="stat_entropy2_3gram_doc5.html">Job 5</a></li>
+			 <li><a href="stat_entropy2_3gram_doc6.html">Job 6</a></li>
+			 <li><a href="stat_entropy2_3gram_doc7.html">Job 7</a></li>
+			 <li><a href="stat_entropy2_3gram_doc8.html">Job 8</a></li>
+        </ul></li>
+        <li><a class="active" href="#">Word Probability Generator (Trigram) &#160 <i class="fa fa-caret-down"></i></a>
+		<ul class="subentropyMenu">
+			 <li><a href="stat_entropy3_3gram_doc1.html">Job 1</a></li>
+			 <li><a href="stat_entropy3_3gram_doc2.html">Job 2</a></li>
+			 <li><a href="stat_entropy3_3gram_doc3.html">Job 3</a></li>
+			 <li><a href="stat_entropy3_3gram_doc4.html">Job 4</a></li>
+			 <li><a href="stat_entropy3_3gram_doc5.html">Job 5</a></li>
+			 <li><a href="stat_entropy3_3gram_doc6.html">Job 6</a></li>
+			 <li><a href="stat_entropy3_3gram_doc7.html">Job 7</a></li>
+			 <li><a href="stat_entropy3_3gram_doc8.html">Job 8</a></li>
+        </ul></li>
+    </ul>
+</div>
+
+
+<!–– ###############################  Content  ############################### ––>
+
+<div style="float:left; height:100%; width:20%; margin: 0;">
+<div class="fill">
+<img src="/Image/chart_prob_4.png" alt="">
+</div>
+</div>
+
+<div style="float:right; height:100%; width:80%; margin: 0;">
+<br></br>
+<div class="infobox">
+	<h2><center><strong> Word Probability Generator </strong></center></h2>
+	<h4 style="margin-left:100px; margin-right:100px;"><center> A probability \(p(t_j)\) of each trigram in a document vector is computed by  \( \frac{f(t_j)}{\sum_{j=1}^{D} f(t_j)} \), where \(f(t_j)\) is the frequency of term \(t\) in the document \(j\) and \(D\) is the total number of documents for \(1\leq j \leq D \).</center></h4>
+	<script SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+	<script>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script>
+</div>
+
+<!–– ###############################  Script  ############################### ––>
+
+<div id="entropy_step3">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="/Entropy/entropy2_doc6_trigram.js"> </script>
+</div>
+
+<div id="legend1" style="position:absolute; width:50%; left:35%;"><center>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="/Tfidf/tfidf_legend.js"> </script>
+</div>
+</div>
+
+<!–– ############################################################################################## ––>
+
+
+
+</body>
+</html>
