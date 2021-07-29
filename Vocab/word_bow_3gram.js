@@ -1,4 +1,4 @@
-d3.json("/Vocab/vocab_bo3gram.json", function(data) {
+d3.json("Vocab/vocab_bo3gram.json", function(data) {
 	
 	var width = 1600,
 		height = 1200,
