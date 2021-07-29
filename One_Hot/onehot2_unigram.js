@@ -20,7 +20,7 @@ d3.json("One_Hot/ohe_step1_unigram.json", function(data) {
 		.domain([0,1])
 		.range(["white", "#b30000"]);
 	
-	var svg = d3.select("#ohe_step2").append("svg")
+	var svg = d3.select("ohe_step2").append("svg")
 		.attr("viewBox", "0 0 1600 1200")
 		.attr("preserveAspectRatio", "xMinYMin meet")
 		.call(d3.behavior.zoom().on("zoom", function () {
@@ -42,7 +42,7 @@ d3.json("One_Hot/ohe_step1_unigram.json", function(data) {
 		.style("stroke", "lightgrey")
 		.style("stroke-width", "1.5px");
 
-	var tooltip = d3.select("#ohe_step2")
+	var tooltip = d3.select("ohe_step2")
 		.append("div")
 		.attr('class', 'tooltip');
 
