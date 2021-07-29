@@ -1,4 +1,4 @@
-d3.text("/CoMatrix/csv_comatrix.csv", function(data) {
+d3.text("CoMatrix/csv_comatrix.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
 
     var container = d3.select("#comatrix")
