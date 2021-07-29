@@ -1,4 +1,4 @@
-d3.json("/One_Hot/ohe_step2_doc1_trigram.json", function(data) {
+d3.json("One_Hot/ohe_step2_doc1_trigram.json", function(data) {
 	
 	var width = 1600,
 		height = 1200,
