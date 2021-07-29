@@ -12,7 +12,7 @@ var svg_2_tfi = d3.select(".tfidf_heatmap2")
   .attr("transform", "translate(" + 220 + "," + 40 + ")");
 
 //Read the data
-d3.csv("/Table/csv_heat_tfidf_bigram.csv", function(data) {
+d3.csv("Table/csv_heat_tfidf_bigram.csv", function(data) {
 
   var x_elements = d3.set(data.map(function(d){return d.doc;})).values();
   var y_elements = d3.set(data.map(function(d){return d.word;})).values();

@@ -12,7 +12,7 @@ var svg_2_ohe = d3.select(".ohe_euclid_heatmap")
   .attr("transform", "translate(" + margin.left + "," + 40 + ")");
 
 //Read the data
-d3.csv("/Table/csv_euclid_ohe_2gram.csv", function(data) {
+d3.csv("Table/csv_euclid_ohe_2gram.csv", function(data) {
 
   var x_elements = d3.set(data.map(function(d){return d.doc_a;})).values();
   var y_elements = d3.set(data.map(function(d){return d.doc_b;})).values();
