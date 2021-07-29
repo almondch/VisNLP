@@ -1,0 +1,39 @@
+html,body{
+ padding: 0;
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    margin: 0;
+    text-align: center;
+    padding: 12px 15px 12px 15px;
+    background: #555;
+    color: white;
+    display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+    text-decoration: none;
+	height: 35px;
+}
+.txtMenu>li{
+    display: inline-block;
+	float: left;
+    margin: 0;
+	width: 9.09%;
+	font-size: 16px;
+}
+
+.txtMenu a.active {
+  background-color: #b30000;
+}
+
+li:hover>a{
+    background: #F1948A;
+    cursor: pointer;
+}
